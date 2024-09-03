@@ -20,8 +20,8 @@ import (
 {{- end }}
 
 	"github.com/getoutreach/httpx/pkg/handlers"
-	"github.com/getoutreach/gobox/pkg/events"
-	"github.com/getoutreach/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/events"
+	"github.com/grevych/gobox/pkg/log"
 	"github.com/gorilla/mux"
 	{{- $additionalImports := stencil.GetModuleHook "http/additionalImports" }}
   {{- range $additionalImports }}

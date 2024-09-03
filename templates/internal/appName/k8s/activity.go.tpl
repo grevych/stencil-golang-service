@@ -24,10 +24,10 @@ import (
 	{{- end }}
 	"github.com/getoutreach/{{ .Config.Name }}/internal/k8s"
 
-	"github.com/getoutreach/gobox/pkg/app"
-	"github.com/getoutreach/gobox/pkg/events"
-	"github.com/getoutreach/gobox/pkg/log"
-	logadapters "github.com/getoutreach/gobox/pkg/log/adapters"
+	"github.com/grevych/gobox/pkg/app"
+	"github.com/grevych/gobox/pkg/events"
+	"github.com/grevych/gobox/pkg/log"
+	logadapters "github.com/grevych/gobox/pkg/log/adapters"
 	ctrl "sigs.k8s.io/controller-runtime"
     "sigs.k8s.io/controller-runtime/pkg/controller"
 	"github.com/pkg/errors"
@@ -67,7 +67,7 @@ func (s *KubernetesService) Run(ctx context.Context) error { //nolint: funlen,ll
 	ctrl.SetLogger(logadapters.NewLogrLogger(ctx))
 
 	s.registerSchemes()
-  
+
     // manager options
     managerOptions := ctrl.Options{
 		Scheme:         s.scheme,

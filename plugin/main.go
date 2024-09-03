@@ -6,7 +6,7 @@ import (
 	"context"
 	"io"
 
-	goboxlog "github.com/getoutreach/gobox/pkg/log"
+	goboxlog "github.com/grevych/gobox/pkg/log"
 	"github.com/getoutreach/stencil-golang/internal/plugin"
 	"github.com/getoutreach/stencil/pkg/extensions/apiv1"
 	"github.com/sirupsen/logrus"

@@ -51,8 +51,8 @@ github.com/emirpasic/gods v1.18.1/go.mod h1:8tpGGwCnJ5H4r6BWwaV6OrWmMoPhUl5jm/FM
 github.com/fatih/color v1.13.0/go.mod h1:kLAiJbzzSOZDVNGyDpeOxJ47H46qBXwg5ILebYFFOfk=
 github.com/fatih/color v1.17.0 h1:GlRw1BRJxkpqUCBKzKOw098ed57fEsKeNjpTe3cSjK4=
 github.com/fatih/color v1.17.0/go.mod h1:YZ7TlrGPkiz6ku9fK3TLD/pl3CpsiFyu8N92HLgmosI=
-github.com/getoutreach/gobox v1.90.2 h1:dRkIgououFs1rwrdT1pvD8OrHa9q6ufvKSYtsH2L2Kw=
-github.com/getoutreach/gobox v1.90.2/go.mod h1:xo3vkzGCj/Lp3KcfIWP9XT4rqFJjJT9cSWcOEiK1Lzk=
+github.com/grevych/gobox v1.90.2 h1:dRkIgououFs1rwrdT1pvD8OrHa9q6ufvKSYtsH2L2Kw=
+github.com/grevych/gobox v1.90.2/go.mod h1:xo3vkzGCj/Lp3KcfIWP9XT4rqFJjJT9cSWcOEiK1Lzk=
 github.com/getoutreach/stencil v1.38.1 h1:2/6erJj7Z12opbsQ310Zzd3myVKlh7IGMRwoZ2kPecQ=
 github.com/getoutreach/stencil v1.38.1/go.mod h1:fxAkR6Q/atWVL3A7DO4t7Qy+vrvxjT7ZVP+f3bxj/rA=
 github.com/gliderlabs/ssh v0.3.7 h1:iV3Bqi942d9huXnzEF2Mt+CY9gLu8DNM4Obd+8bODRE=

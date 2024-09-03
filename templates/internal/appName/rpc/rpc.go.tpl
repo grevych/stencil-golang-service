@@ -25,9 +25,9 @@ import (
 {{- .}}
 {{- end }}
 
-	"github.com/getoutreach/gobox/pkg/events"
-	"github.com/getoutreach/gobox/pkg/log"
-	"github.com/getoutreach/gobox/pkg/trace"
+	"github.com/grevych/gobox/pkg/events"
+	"github.com/grevych/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/trace"
 	"github.com/getoutreach/{{ .Config.Name }}/api"
 	"github.com/getoutreach/services/pkg/grpcx"
 	"google.golang.org/grpc"

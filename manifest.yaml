@@ -1,31 +1,8 @@
 name: github.com/getoutreach/stencil-golang
 ## <<Stencil::Block(keys)>>
-modules:
-  - name: github.com/getoutreach/devbase
-    version: ">=2.21.0"
+modules: []
 type: templates,extension
 arguments:
-  # The following terraform.datadog fields are used for Canary deployments in app.jsonnet.tpl
-  terraform.datadog.grpc.latency.thresholds.lowTraffic:
-    schema:
-      type: number
-    description: Overrides the low traffic threshold in the "grpc_latency_high" terraform module in monitoring/datadog.tf.
-  terraform.datadog.grpc.qos.thresholds.lowTraffic:
-    schema:
-      type: number
-    description: Overrides the low traffic threshold in the "grpc_latency_high" terraform module in monitoring/datadog.tf.
-  terraform.datadog.http.latency.thresholds.lowTraffic:
-    schema:
-      type: number
-    description: Overrides the low traffic threshold in the "http_latency_high" terraform module in monitoring/datadog.tf.
-  terraform.datadog.http.percentiles.lowTraffic:
-    schema:
-      type: number
-    description: Overrides the low traffic percentile in the "http_success_rate_low" terraform module in monitoring/datadog.tf.
-  terraform.datadog.podRestart.thresholds.lowCount:
-    schema:
-      type: number
-    description: Overrides the pod restarts threshold in the "pod_restarts" terraform module in monitoring/datadog.tf.
   service:
     schema:
       type: boolean
@@ -42,16 +19,6 @@ arguments:
           - kafka
           - python
     description: Any valid built-in service activities can be supplied here and they will be provided. The `service` flag must be set to true. Valid values for this are `http`, `grpc`, `temporal`, `python` and `kafka`.
-  aws.useKIAM:
-    schema:
-      type: boolean
-    default: true
-    description: Whether the application uses KIAM for IAM roles or IRSA roles for service accounts.
-  oss:
-    schema:
-      type: boolean
-    description: Deprecated, denotes this is an open source repository.
-    deprecated: true
   commands:
     schema:
       type: array

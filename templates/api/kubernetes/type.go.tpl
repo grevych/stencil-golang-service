@@ -11,7 +11,7 @@
 package {{ $g.version }}
 
 import (
-	"github.com/getoutreach/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/log"
 	{{- if $isCustomResource }}
 	"github.com/getoutreach/services/pkg/k8s/resources"
 	{{- else }}

@@ -4,7 +4,7 @@ The service activity framework is a simple framework allowing pluggable go-routi
 
 ## How it Works
 
-The framework is implemented by using the [`async.Runner`](https://github.com/getoutreach/gobox/blob/c8a5b56788ef7a8ad27373c63febf6f993e1a1b0/pkg/async/async.go#L48) interface for every activity. ([`async.Closer`](https://github.com/getoutreach/gobox/blob/c8a5b56788ef7a8ad27373c63febf6f993e1a1b0/pkg/async/async.go#L53) is also implemented for activities that need to close resources.). Each activity is started in [`async.RunGroup`](https://github.com/getoutreach/gobox/blob/c8a5b56788ef7a8ad27373c63febf6f993e1a1b0/pkg/async/async.go#L136) and waits for the following conditions:
+The framework is implemented by using the [`async.Runner`](https://github.com/grevych/gobox/blob/c8a5b56788ef7a8ad27373c63febf6f993e1a1b0/pkg/async/async.go#L48) interface for every activity. ([`async.Closer`](https://github.com/grevych/gobox/blob/c8a5b56788ef7a8ad27373c63febf6f993e1a1b0/pkg/async/async.go#L53) is also implemented for activities that need to close resources.). Each activity is started in [`async.RunGroup`](https://github.com/grevych/gobox/blob/c8a5b56788ef7a8ad27373c63febf6f993e1a1b0/pkg/async/async.go#L136) and waits for the following conditions:
 
 - An activity errors
 - Context is canceled

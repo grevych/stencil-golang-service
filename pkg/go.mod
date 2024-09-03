@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/KimMachineGun/automemlimit v0.2.6
-	github.com/getoutreach/gobox v1.71.0
+	github.com/grevych/gobox v1.71.0
 	go.uber.org/automaxprocs v1.5.2
 )
 

@@ -111,7 +111,7 @@
 # Dependencies for the service
 {{- define "dependencies" }}
 go:
-- name: github.com/getoutreach/gobox
+- name: github.com/grevych/gobox
   version: v1.90.2
 - name: github.com/getoutreach/stencil-golang/pkg
   # To obtain, set `github.com/getoutreach/stencil-golang/pkg` to 'main'

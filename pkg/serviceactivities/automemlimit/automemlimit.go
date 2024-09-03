@@ -21,7 +21,7 @@ import (
 	"context"
 
 	"github.com/KimMachineGun/automemlimit/memlimit"
-	"github.com/getoutreach/gobox/pkg/async"
+	"github.com/grevych/gobox/pkg/async"
 )
 
 // _ ensures that ServiceActivity implements the async.Runner interface.

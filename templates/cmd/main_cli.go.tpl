@@ -29,11 +29,11 @@ package main
 import (
 	"context"
 
-	oapp "github.com/getoutreach/gobox/pkg/app"
+	oapp "github.com/grevych/gobox/pkg/app"
 	"github.com/sirupsen/logrus"
-	gcli "github.com/getoutreach/gobox/pkg/cli"
+	gcli "github.com/grevych/gobox/pkg/cli"
 	"github.com/urfave/cli/v2"
-	"github.com/getoutreach/gobox/pkg/cfg"
+	"github.com/grevych/gobox/pkg/cfg"
 
 	// Place any extra imports for your startup code here
 	// <<Stencil::Block(imports)>>

@@ -11,8 +11,8 @@ package {{ stencil.ApplyTemplate "goPackageSafeName" }} //nolint:revive // Why: 
 import (
 	"context"
 
-	"github.com/getoutreach/gobox/pkg/cfg"
-	"github.com/getoutreach/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/cfg"
+	"github.com/grevych/gobox/pkg/log"
   {{- $additionalImports := stencil.GetModuleHook "internal/config.go/additionalImports" }}
   {{- if $additionalImports }}
 	// Code inserted by modules
@@ -46,7 +46,7 @@ type Config struct {
   {{- end }}
   // End code inserted by modules
   {{- end }}
-	
+
   // <<Stencil::Block(config)>>
 {{ file.Block "config" }}
 	// <</Stencil::Block>>

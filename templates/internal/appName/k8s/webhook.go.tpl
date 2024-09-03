@@ -16,8 +16,8 @@ import (
 
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/getoutreach/gobox/pkg/events"
-	"github.com/getoutreach/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/events"
+	"github.com/grevych/gobox/pkg/log"
 	api{{ $g.version }} "github.com/getoutreach/{{ .Config.Name }}/api/k8s/{{if not (empty $g.package)}}{{ $g.package }}/{{end}}{{ $g.version }}"
 
 	// <<Stencil::Block(imports)>>

@@ -15,7 +15,7 @@ package {{ $g.version }}
 import (
 	"context"
 
-	"github.com/getoutreach/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/log"
 	k8slogging "github.com/getoutreach/services/pkg/k8s/logging"
 	"github.com/getoutreach/services/pkg/k8s/controllers"
 	"github.com/getoutreach/services/pkg/k8s/logging"
@@ -46,9 +46,9 @@ type {{ $ctrlStruct }} struct {
 func New{{ $ctrlStruct }} (cl client.Client, options controller.Options) *{{ $ctrlStruct }} {
 	r := &{{ $ctrlStruct }} {}
 	// use the controller as the Handler for Reconciler
-	r.Reconciler = controllers.NewReconciler(cl, 
+	r.Reconciler = controllers.NewReconciler(cl,
       "{{ $r.kind }}",
-      "{{ $g.version }}", 
+      "{{ $g.version }}",
       r,
       options)
 	return r

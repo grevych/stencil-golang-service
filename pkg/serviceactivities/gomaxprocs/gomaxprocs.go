@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/getoutreach/gobox/pkg/async"
-	"github.com/getoutreach/gobox/pkg/events"
-	"github.com/getoutreach/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/async"
+	"github.com/grevych/gobox/pkg/events"
+	"github.com/grevych/gobox/pkg/log"
 	"go.uber.org/automaxprocs/maxprocs"
 )
 

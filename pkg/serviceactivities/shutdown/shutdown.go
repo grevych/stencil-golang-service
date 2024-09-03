@@ -13,10 +13,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/getoutreach/gobox/pkg/async"
-	"github.com/getoutreach/gobox/pkg/events"
-	"github.com/getoutreach/gobox/pkg/log"
-	"github.com/getoutreach/gobox/pkg/orerr"
+	"github.com/grevych/gobox/pkg/async"
+	"github.com/grevych/gobox/pkg/events"
+	"github.com/grevych/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/orerr"
 )
 
 // SignalError is an error struct used by the Shutdown activity to indicate which signal caused the shutdown.

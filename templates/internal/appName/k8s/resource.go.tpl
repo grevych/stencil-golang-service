@@ -13,7 +13,7 @@ import (
 
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/getoutreach/gobox/pkg/log"
+	"github.com/grevych/gobox/pkg/log"
 
 	// <<Stencil::Block(imports)>>
 {{ file.Block "imports" }}
